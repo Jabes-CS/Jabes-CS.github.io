@@ -17,7 +17,7 @@ body {
     max-width: 600px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 139, 0.7); /* Sombra azul escuro */
+    box-shadow: 0 0 25px 10px rgba(0, 0, 139, 0.7); /* Aumentando a sombra azul escuro */
     text-align: center;
 }
 
@@ -32,6 +32,12 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
     border: 3px solid rgba(0, 0, 139, 0.7); /* Borda azul escuro */
+    transition: transform 0.3s; /* Animação suave ao aumentar */
+}
+
+/* Aumentar a foto ao passar o mouse */
+.profile-pic:hover {
+    transform: scale(1.2); /* Aumenta 20% ao passar o mouse */
 }
 
 /* Nome completo */
@@ -40,9 +46,42 @@ h1 {
     margin: 10px 0;
 }
 
+/* Seções do currículo */
+h2 {
+    color: #00008b; /* Azul escuro */
+    margin-top: 20px;
+}
+
 /* Conteúdo do currículo */
 .content {
     color: #333333;
     font-size: 16px;
     line-height: 1.6;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Listas */
+ul {
+    list-style-type: none; /* Remove marcadores das listas */
+    padding: 0; /* Remove espaçamento da lista */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Largura para telas menores */
+    }
+
+    .profile-pic {
+        width: 80px; /* Diminuir a foto para telas pequenas */
+        height: 80px; /* Diminuir a foto para telas pequenas */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Ajustar tamanho da fonte */
+    }
+
+    .content {
+        font-size: 14px; /* Ajustar tamanho da fonte */
+    }
 }
