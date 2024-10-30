@@ -1,3 +1,3 @@
 # Jabes-CS.github.io
 
-- [Meu Currículo](https://jabes-cs.github.io/)
+- [Meu Currículo - Jabes](https://jabes-cs.github.io/)
